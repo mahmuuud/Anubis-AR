@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4347A32424279300507FC4 /* MonumentsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347A12424279300507FC4 /* MonumentsDataModel.xcdatamodeld */; };
+		0C4347A724242DAA00507FC4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347A524242DAA00507FC4 /* SplashScreenViewController.swift */; };
+		0C4347A824242DAA00507FC4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4347A624242DAA00507FC4 /* SplashScreenViewController.xib */; };
+		0C4347CD2424316000507FC4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347CC2424316000507FC4 /* DataSource.swift */; };
+		0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347CF2424330500507FC4 /* PinterestLayout.swift */; };
+		0C4347D224243C1500507FC4 /* MonumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347D124243C1500507FC4 /* MonumentModel.swift */; };
 		0C6467BE2422802400DD412D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6467BD2422802400DD412D /* AppDelegate.swift */; };
 		0C6467C02422802400DD412D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6467BF2422802400DD412D /* SceneDelegate.swift */; };
-		0C6467C22422802400DD412D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6467C12422802400DD412D /* ViewController.swift */; };
 		0C6467C52422802400DD412D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6467C32422802400DD412D /* Main.storyboard */; };
 		0C6467C72422802600DD412D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6467C62422802600DD412D /* Assets.xcassets */; };
 		0C6467CA2422802600DD412D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6467C82422802600DD412D /* LaunchScreen.storyboard */; };
+		0C6467D22422806D00DD412D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6467D12422806D00DD412D /* GoogleService-Info.plist */; };
+		0CAAC4DF244684AF0070A49F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC4DD244684AF0070A49F /* HomeViewController.swift */; };
+		0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC4DE244684AF0070A49F /* HomeViewController.xib */; };
+		0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */; };
+		0CAAC4E4244685A10070A49F /* MonumentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */; };
+		3EA40F68DD5147B9710D36A0 /* Pods_Anubis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4511CCF600DF8772D608B458 /* Pods_Anubis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4347A22424279300507FC4 /* MonumentsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonumentsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		0C4347A524242DAA00507FC4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		0C4347A624242DAA00507FC4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		0C4347CC2424316000507FC4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		0C4347CF2424330500507FC4 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		0C4347D124243C1500507FC4 /* MonumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentModel.swift; sourceTree = "<group>"; };
 		0C6467BA2422802400DD412D /* Anubis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anubis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6467BD2422802400DD412D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C6467BF2422802400DD412D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C6467C12422802400DD412D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C6467C42422802400DD412D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C6467C62422802600DD412D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C6467C92422802600DD412D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C6467CB2422802600DD412D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6467D12422806D00DD412D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CAAC4DD244684AF0070A49F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0CAAC4DE244684AF0070A49F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentCollectionViewCell.swift; sourceTree = "<group>"; };
+		0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentCollectionViewCell.xib; sourceTree = "<group>"; };
+		3E5AD4C15190E2CCE3BB9F7B /* Pods-Anubis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis.release.xcconfig"; path = "Target Support Files/Pods-Anubis/Pods-Anubis.release.xcconfig"; sourceTree = "<group>"; };
+		4511CCF600DF8772D608B458 /* Pods_Anubis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anubis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8231917C9E725E77EC339E /* Pods-Anubis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis.debug.xcconfig"; path = "Target Support Files/Pods-Anubis/Pods-Anubis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA40F68DD5147B9710D36A0 /* Pods_Anubis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4347972422E26C00507FC4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0C4347A424242D8C00507FC4 /* Splash Screen */,
+				0C4347982422E28400507FC4 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0C4347982422E28400507FC4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0CAAC4DC244680210070A49F /* Cell */,
+				0CAAC4DD244684AF0070A49F /* HomeViewController.swift */,
+				0CAAC4DE244684AF0070A49F /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0C4347A02424277700507FC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C4347A12424279300507FC4 /* MonumentsDataModel.xcdatamodeld */,
+				0C4347CC2424316000507FC4 /* DataSource.swift */,
+				0C4347D124243C1500507FC4 /* MonumentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C4347A424242D8C00507FC4 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0C4347A524242DAA00507FC4 /* SplashScreenViewController.swift */,
+				0C4347A624242DAA00507FC4 /* SplashScreenViewController.xib */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		0C4347CE242432F400507FC4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0C4347CF2424330500507FC4 /* PinterestLayout.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		0C6467B12422802400DD412D = {
 			isa = PBXGroup;
 			children = (
 				0C6467BC2422802400DD412D /* Anubis */,
 				0C6467BB2422802400DD412D /* Products */,
+				F22A2CCAC2EF76D3D396B6DE /* Pods */,
+				2F26530F852041C153BA6EFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +129,44 @@
 		0C6467BC2422802400DD412D /* Anubis */ = {
 			isa = PBXGroup;
 			children = (
+				0C4347CE242432F400507FC4 /* Utilities */,
+				0C4347A02424277700507FC4 /* Model */,
+				0C4347972422E26C00507FC4 /* Scenes */,
+				0C6467D12422806D00DD412D /* GoogleService-Info.plist */,
 				0C6467BD2422802400DD412D /* AppDelegate.swift */,
 				0C6467BF2422802400DD412D /* SceneDelegate.swift */,
-				0C6467C12422802400DD412D /* ViewController.swift */,
 				0C6467C32422802400DD412D /* Main.storyboard */,
 				0C6467C62422802600DD412D /* Assets.xcassets */,
 				0C6467C82422802600DD412D /* LaunchScreen.storyboard */,
 				0C6467CB2422802600DD412D /* Info.plist */,
 			);
 			path = Anubis;
+			sourceTree = "<group>";
+		};
+		0CAAC4DC244680210070A49F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */,
+				0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2F26530F852041C153BA6EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4511CCF600DF8772D608B458 /* Pods_Anubis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F22A2CCAC2EF76D3D396B6DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E8231917C9E725E77EC339E /* Pods-Anubis.debug.xcconfig */,
+				3E5AD4C15190E2CCE3BB9F7B /* Pods-Anubis.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C6467CE2422802600DD412D /* Build configuration list for PBXNativeTarget "Anubis" */;
 			buildPhases = (
+				04059D57AB4569B78A8CD7F5 /* [CP] Check Pods Manifest.lock */,
 				0C6467B62422802400DD412D /* Sources */,
 				0C6467B72422802400DD412D /* Frameworks */,
 				0C6467B82422802400DD412D /* Resources */,
+				E4B66F8635F7BC95E6FA3E12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,19 +230,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6467CA2422802600DD412D /* LaunchScreen.storyboard in Resources */,
+				0C6467D22422806D00DD412D /* GoogleService-Info.plist in Resources */,
+				0C4347A824242DAA00507FC4 /* SplashScreenViewController.xib in Resources */,
+				0CAAC4E4244685A10070A49F /* MonumentCollectionViewCell.xib in Resources */,
 				0C6467C72422802600DD412D /* Assets.xcassets in Resources */,
 				0C6467C52422802400DD412D /* Main.storyboard in Resources */,
+				0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04059D57AB4569B78A8CD7F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anubis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B66F8635F7BC95E6FA3E12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Anubis/Pods-Anubis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Anubis/Pods-Anubis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Anubis/Pods-Anubis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C6467B62422802400DD412D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C6467C22422802400DD412D /* ViewController.swift in Sources */,
+				0C4347CD2424316000507FC4 /* DataSource.swift in Sources */,
+				0C4347A32424279300507FC4 /* MonumentsDataModel.xcdatamodeld in Sources */,
+				0C4347D224243C1500507FC4 /* MonumentModel.swift in Sources */,
+				0CAAC4DF244684AF0070A49F /* HomeViewController.swift in Sources */,
+				0C4347A724242DAA00507FC4 /* SplashScreenViewController.swift in Sources */,
+				0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */,
+				0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */,
 				0C6467BE2422802400DD412D /* AppDelegate.swift in Sources */,
 				0C6467C02422802400DD412D /* SceneDelegate.swift in Sources */,
 			);
@@ -282,10 +438,11 @@
 		};
 		0C6467CF2422802600DD412D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8231917C9E725E77EC339E /* Pods-Anubis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNTNZC5RBJ;
+				DEVELOPMENT_TEAM = AXBRK75K78;
 				INFOPLIST_FILE = Anubis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +457,11 @@
 		};
 		0C6467D02422802600DD412D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5AD4C15190E2CCE3BB9F7B /* Pods-Anubis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNTNZC5RBJ;
+				DEVELOPMENT_TEAM = AXBRK75K78;
 				INFOPLIST_FILE = Anubis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +496,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0C4347A12424279300507FC4 /* MonumentsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0C4347A22424279300507FC4 /* MonumentsDataModel.xcdatamodel */,
+			);
+			currentVersion = 0C4347A22424279300507FC4 /* MonumentsDataModel.xcdatamodel */;
+			path = MonumentsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0C6467B22422802400DD412D /* Project object */;
 }
