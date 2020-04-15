@@ -67,7 +67,7 @@ extension HomeViewController: MonumentCollectionCellDelegate {
     func didSetCellImage(at indexPath: IndexPath, using height: CGFloat) {
         let layout = homeCollectionView.collectionViewLayout as? PinterestLayout
         layout?.cache = []
-        self.photosHeights [indexPath.row] = height/10
+        self.photosHeights [indexPath.row] = height/12
         self.homeCollectionView.collectionViewLayout.invalidateLayout()
         self.homeCollectionView.layoutIfNeeded()
     }
