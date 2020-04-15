@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import Firebase
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
+    }
+        
+    func applicationWillTerminate(_ application: UIApplication) {
+        self.saveContextChanges()
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        self.saveContextChanges()
     }
 
     // MARK: UISceneSession Lifecycle
@@ -32,6 +41,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    // MARK: CoreData Stack
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "MonumentsDataModel")
+        container.loadPersistentStores { (description, error) in
+            if let error = error {
+                fatalError(error.localizedDescription)
+            }
+        }
+        DataSource.shared.persistentContainer = container
+        return container
+    }()
+    
+    func saveContextChanges() {
+        if persistentContainer.viewContext.hasChanges {
+            try? persistentContainer.viewContext.save()
+        }
+    }
 
 }
 
