@@ -23,6 +23,12 @@
 		0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC4DE244684AF0070A49F /* HomeViewController.xib */; };
 		0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */; };
 		0CAAC4E4244685A10070A49F /* MonumentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */; };
+		0CAAC536244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC535244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift */; };
+		0CAAC538244D1C170070A49F /* AnimatiorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC537244D1C170070A49F /* AnimatiorFactory.swift */; };
+		0CAAC53A244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC539244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift */; };
+		0CAAC53C244E3C160070A49F /* HomeViewController + Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC53B244E3C160070A49F /* HomeViewController + Delegates.swift */; };
+		0CAAC540244E41B80070A49F /* OptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC53F244E41B80070A49F /* OptionsView.xib */; };
+		0CAAC542244E4AC40070A49F /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC541244E4AC40070A49F /* OptionsView.swift */; };
 		3EA40F68DD5147B9710D36A0 /* Pods_Anubis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4511CCF600DF8772D608B458 /* Pods_Anubis.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,12 @@
 		0CAAC4DE244684AF0070A49F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentCollectionViewCell.xib; sourceTree = "<group>"; };
+		0CAAC535244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + UIPreviewInteraction.swift"; sourceTree = "<group>"; };
+		0CAAC537244D1C170070A49F /* AnimatiorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatiorFactory.swift; sourceTree = "<group>"; };
+		0CAAC539244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + UICollectionVIew.swift"; sourceTree = "<group>"; };
+		0CAAC53B244E3C160070A49F /* HomeViewController + Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + Delegates.swift"; sourceTree = "<group>"; };
+		0CAAC53F244E41B80070A49F /* OptionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsView.xib; sourceTree = "<group>"; };
+		0CAAC541244E4AC40070A49F /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		3E5AD4C15190E2CCE3BB9F7B /* Pods-Anubis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis.release.xcconfig"; path = "Target Support Files/Pods-Anubis/Pods-Anubis.release.xcconfig"; sourceTree = "<group>"; };
 		4511CCF600DF8772D608B458 /* Pods_Anubis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anubis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8231917C9E725E77EC339E /* Pods-Anubis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis.debug.xcconfig"; path = "Target Support Files/Pods-Anubis/Pods-Anubis.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,9 +86,12 @@
 		0C4347982422E28400507FC4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0CAAC534244D1A810070A49F /* Extenstions */,
 				0CAAC4DC244680210070A49F /* Cell */,
 				0CAAC4DD244684AF0070A49F /* HomeViewController.swift */,
 				0CAAC4DE244684AF0070A49F /* HomeViewController.xib */,
+				0CAAC53F244E41B80070A49F /* OptionsView.xib */,
+				0CAAC541244E4AC40070A49F /* OptionsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -104,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				0C4347CF2424330500507FC4 /* PinterestLayout.swift */,
+				0CAAC537244D1C170070A49F /* AnimatiorFactory.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -150,6 +166,16 @@
 				0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CAAC534244D1A810070A49F /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				0CAAC535244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift */,
+				0CAAC539244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift */,
+				0CAAC53B244E3C160070A49F /* HomeViewController + Delegates.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 		2F26530F852041C153BA6EFA /* Frameworks */ = {
@@ -236,6 +262,7 @@
 				0C6467C72422802600DD412D /* Assets.xcassets in Resources */,
 				0C6467C52422802400DD412D /* Main.storyboard in Resources */,
 				0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */,
+				0CAAC540244E41B80070A49F /* OptionsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +317,17 @@
 			files = (
 				0C4347CD2424316000507FC4 /* DataSource.swift in Sources */,
 				0C4347A32424279300507FC4 /* MonumentsDataModel.xcdatamodeld in Sources */,
+				0CAAC53A244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift in Sources */,
+				0CAAC542244E4AC40070A49F /* OptionsView.swift in Sources */,
 				0C4347D224243C1500507FC4 /* MonumentModel.swift in Sources */,
 				0CAAC4DF244684AF0070A49F /* HomeViewController.swift in Sources */,
 				0C4347A724242DAA00507FC4 /* SplashScreenViewController.swift in Sources */,
 				0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */,
+				0CAAC538244D1C170070A49F /* AnimatiorFactory.swift in Sources */,
 				0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */,
+				0CAAC536244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift in Sources */,
 				0C6467BE2422802400DD412D /* AppDelegate.swift in Sources */,
+				0CAAC53C244E3C160070A49F /* HomeViewController + Delegates.swift in Sources */,
 				0C6467C02422802400DD412D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
