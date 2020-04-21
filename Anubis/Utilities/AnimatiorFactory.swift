@@ -42,13 +42,18 @@ class AnimatiorFactory {
     
     @discardableResult
     static func complete(view: UIVisualEffectView, frame: CGRect) -> UIViewPropertyAnimator {
-        let xCoordinate = frame.minX
+        let width = (view.superview?.bounds.width ?? 200) - 20
+        var xCoordinate = frame.minX
         let yCoordinate = ((frame.maxY + 156) > view.superview?.frame.maxY ?? CGFloat(0)) ? frame.minY - 156 : frame.maxY + 6
+        if (xCoordinate + width) > ((view.superview?.bounds.maxX ?? 0) - 10) {
+            xCoordinate -= ((xCoordinate + width) - frame.maxX)
+        }
         return UIViewPropertyAnimator(duration: 0.3, dampingRatio: 0.7) {
             view.transform = .identity
             view.contentView.alpha = 1
-            view.frame = CGRect(x: xCoordinate, y: yCoordinate, width: view.bounds.width, height: 150)
-    
+            
+            view.frame = CGRect(x: xCoordinate, y: yCoordinate, width: (view.superview?.bounds.width ?? 200) - 20, height: 150)
         }
+        
     }
 }

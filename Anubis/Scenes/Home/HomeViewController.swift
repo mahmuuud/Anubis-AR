@@ -55,6 +55,10 @@ class HomeViewController: UIViewController {
     }
     
     @objc func didTapBlurView() {
+        playbackOptionsAnimation()
+    }
+    
+    func playbackOptionsAnimation() {
         animator = AnimatiorFactory.grow(blurView: blurView, view: optionsView)
         cancelPreview()
     }

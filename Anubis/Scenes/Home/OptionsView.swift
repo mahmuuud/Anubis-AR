@@ -48,9 +48,9 @@ class OptionsView: UIVisualEffectView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        directionsButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        saveButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        ARButton.titleLabel?.adjustsFontSizeToFitWidth = true
+//        directionsButton.titleLabel?.adjustsFontSizeToFitWidth = true
+//        saveButton.titleLabel?.adjustsFontSizeToFitWidth = true
+//        ARButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
     
