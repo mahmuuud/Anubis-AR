@@ -19,8 +19,9 @@ class HomeViewController: UIViewController {
     
     private var previewInteraction: UIPreviewInteraction?
     private let backgroundImageView = UIImageView(image: #imageLiteral(resourceName: "29"))
-    let monuments = DataSource.shared.monuments
     private let cellNib = UINib(nibName: "MonumentCollectionViewCell", bundle: nil)
+    var isAnimatingBanner = false
+    let monuments = DataSource.shared.monuments
     let cellReuseId = "MonumentCollectionViewCell"
     var photosHeights: [Int : CGFloat] = [:]
     
@@ -31,7 +32,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9121143818, green: 0.7458944917, blue: 0.5656014681, alpha: 1)
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationItem.title = "Anubis"
         if let layout = homeCollectionView?.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
         }

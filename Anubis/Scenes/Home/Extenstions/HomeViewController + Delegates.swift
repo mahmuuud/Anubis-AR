@@ -13,8 +13,9 @@ extension HomeViewController: PinterestLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
         // Retrieve the image height
         //        let n = Int.random(in: 200...300)
-        let height = self.photosHeights[indexPath.row]
-        return height ?? 250.0
+//        let height = self.photosHeights[indexPath.row]
+        let height = CGFloat(250)
+        return height
     }
 }
 
@@ -39,7 +40,14 @@ extension HomeViewController: OptionsViewDelegate {
     }
     
     func didTapSaveButton(at indexPath: IndexPath) {
-        
+        let tappedMonument = monuments[indexPath.row]
+        let monumentToSave = Monument(context: DataSource.shared.viewContext)
+        monumentToSave.name = tappedMonument.name
+        monumentToSave.lat = tappedMonument.lat
+        monumentToSave.lon = tappedMonument.lon
+        monumentToSave.imagesPaths?.append(tappedMonument.imagesPaths[0])
+        DataSource.shared.savedMonuments.append(monumentToSave)
+        self.playbackOptionsAnimation()
     }
     
     func didTapARButton(at indexPath: IndexPath) {

@@ -24,7 +24,8 @@ class SplashScreenViewController: UIViewController {
     func performTransitionToHomeVC() {
         DispatchQueue.main.async {
             if let window = (self.view.window){
-                window.rootViewController = HomeViewController()
+                let rootVC = UINavigationController(rootViewController: HomeViewController())
+                window.rootViewController = rootVC
                 UIView.transition(with: window, duration: 0.5551, options: .transitionCrossDissolve, animations: {}, completion: nil)
             }
         }
