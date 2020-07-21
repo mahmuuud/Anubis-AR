@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        let _ = persistentContainer
         return true
     }
         
@@ -51,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         DataSource.shared.persistentContainer = container
+        DataSource.shared.viewContext = container.viewContext
         return container
     }()
     

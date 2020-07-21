@@ -44,6 +44,7 @@ class OptionsView: UIVisualEffectView {
         contentView.addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
     }
     
     override func layoutSubviews() {
@@ -72,5 +73,13 @@ class OptionsView: UIVisualEffectView {
             return
         }
         delegate?.didTapARButton(at: indexPath)
+    }
+}
+
+class HighlightedButton: UIButton {
+    override open var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? .lightGray : .clear
+        }
     }
 }

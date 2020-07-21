@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class AnimatiorFactory {
     
@@ -55,5 +56,65 @@ class AnimatiorFactory {
             view.frame = CGRect(x: xCoordinate, y: yCoordinate, width: (view.superview?.bounds.width ?? 200) - 20, height: 150)
         }
         
+    }
+    
+    @discardableResult
+    static func shake(view: UIView, with deltaX: CGFloat) -> UIViewPropertyAnimator {
+        let animator = UIViewPropertyAnimator()
+        let _ = view.bounds
+        animator.addAnimations({
+            view.bounds.origin.x += deltaX
+        }, delayFactor: 0)
+        
+        animator.addAnimations({
+            view.bounds.origin.x -= deltaX
+        }, delayFactor: 0.1)
+        
+        animator.addAnimations({
+            view.bounds.origin.x -= deltaX
+        }, delayFactor: 0.2)
+        
+        animator.addAnimations({
+            view.bounds.origin.x += deltaX
+        }, delayFactor: 0.3)
+        
+        animator.addCompletion { (_) in
+            //AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+        }
+        
+        return animator
+    }
+    
+    static func showErrorBanner(in parentView: UIView, with message: String) {
+        let safeAreaGuide = parentView.layoutMarginsGuide
+        let bannerView = UIView(frame: CGRect(x: parentView.bounds.minX, y: safeAreaGuide.layoutFrame.minY, width: parentView.bounds.width, height: 40))
+        bannerView.backgroundColor = .red
+        bannerView.center.y -= 200
+        parentView.addSubview(bannerView)
+        
+        let label = UILabel()
+        label.adjustsFontSizeToFitWidth = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        bannerView.insertSubview(label, at: 0)
+        NSLayoutConstraint.activate([
+            NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .greaterThanOrEqual, toItem: bannerView, attribute: .leading, multiplier: 1, constant: 20),
+            NSLayoutConstraint(item: label, attribute: .trailing, relatedBy: .lessThanOrEqual, toItem: bannerView, attribute: .trailing, multiplier: 1, constant: -20),
+            NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: bannerView, attribute: .centerY, multiplier: 1, constant: 0),
+             NSLayoutConstraint(item: label, attribute: .centerX, relatedBy: .equal, toItem: bannerView, attribute: .centerX, multiplier: 1, constant: 0)
+        
+        ])
+        
+        label.textColor = .white
+        label.text = message
+        
+        UIView.animate(withDuration: 0.7, animations: {
+            bannerView.center.y += 200
+        }, completion: { (_) in
+            UIView.animate(withDuration: 0.5, delay: 2, options: [], animations: {
+                bannerView.center.y -= 200
+            }) { (_) in
+                bannerView.removeFromSuperview()
+            }
+        })
     }
 }

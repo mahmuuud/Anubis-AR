@@ -28,7 +28,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="IpD-fq-CeJ">
                                 <rect key="frame" x="0.0" y="0.0" width="522" height="20"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skt-9h-hSr">
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skt-9h-hSr" customClass="HighlightedButton" customModule="Anubis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="452" height="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -62,7 +62,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="directionsButtonTapped:" destination="-1" eventType="touchUpInside" id="8Lc-8G-2N6"/>
                                             <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="S6i-Lt-zhc"/>
                                         </connections>
                                     </button>
@@ -89,7 +88,6 @@
                                         </state>
                                         <connections>
                                             <action selector="arButtonTapped:" destination="-1" eventType="touchUpInside" id="Ldm-XR-Dlj"/>
-                                            <action selector="directionsButtonTapped:" destination="-1" eventType="touchUpInside" id="AYA-2j-y9t"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view.3d" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eee-He-RO9">
