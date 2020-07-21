@@ -17,68 +17,94 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
+    private var previewInteraction: UIPreviewInteraction?
     private let backgroundImageView = UIImageView(image: #imageLiteral(resourceName: "29"))
-    private let monuments = DataSource.shared.monuments
+    let monuments = DataSource.shared.monuments
     private let cellNib = UINib(nibName: "MonumentCollectionViewCell", bundle: nil)
-    private let cellReuseId = "MonumentCollectionViewCell"
-    private var photosHeights: [Int : CGFloat] = [:]
+    let cellReuseId = "MonumentCollectionViewCell"
+    var photosHeights: [Int : CGFloat] = [:]
+    
+    let blurView = UIVisualEffectView(effect: nil)
+    var animator: UIViewPropertyAnimator?
+    var replicatedView: UIView?
+    let optionsView = OptionsView(effect: UIBlurEffect(style: .regular))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let layout = homeCollectionView?.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
-          }
+        }
+        
+        previewInteraction = UIPreviewInteraction(view: homeCollectionView)
+        previewInteraction?.delegate = self
         
         backgroundImageView.contentMode = .scaleAspectFill
         self.homeCollectionView.backgroundView = backgroundImageView
-        
-        // Register cell classes
         self.homeCollectionView.register(cellNib, forCellWithReuseIdentifier: cellReuseId)
         
-    }
-
-}
-
-extension HomeViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return monuments.count
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapBlurView))
+        blurView.isUserInteractionEnabled = false
+        blurView.addGestureRecognizer(tapGesture)
+        view.addSubview(blurView)
+        
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseId, for: indexPath) as! MonumentCollectionViewCell
-        cell.delegate = self
-        cell.indexPath = indexPath
-        cell.configureMonumentCell(with: monuments[indexPath.row].imagesPaths[0], monumentName: monuments[indexPath.row].name)
-        return cell
-    }
-}
-
-extension HomeViewController: PinterestLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        // Retrieve the image height
-//        let n = Int.random(in: 200...300)
-        let height = self.photosHeights[indexPath.row]
-        return height ?? 250.0
-    }
-}
-
-extension HomeViewController: MonumentCollectionCellDelegate {
-    func didSetCellImage(at indexPath: IndexPath, using height: CGFloat) {
-        let layout = homeCollectionView.collectionViewLayout as? PinterestLayout
-        layout?.cache = []
-        self.photosHeights [indexPath.row] = height/12
-        self.homeCollectionView.collectionViewLayout.invalidateLayout()
-        self.homeCollectionView.layoutIfNeeded()
+    override func viewWillLayoutSubviews() {
+        blurView.frame = view.bounds
     }
     
-}
-
-class CustomImageView : UIImageView {
-    var didSetImage = false
-    override var image: UIImage? {
-        didSet {
-            print("image did set")
-        }
+    @objc func didTapBlurView() {
+        playbackOptionsAnimation()
     }
+    
+    func playbackOptionsAnimation() {
+        animator = AnimatiorFactory.grow(blurView: blurView, view: optionsView)
+        cancelPreview()
+    }
+    
+    func startPreview(for cellView: UIView, at indexPath: IndexPath) {
+        replicatedView?.removeFromSuperview()
+        replicatedView = cellView.snapshotView(afterScreenUpdates: false)
+        replicatedView?.frame = cellView.convert(cellView.bounds, to: self.view)
+        view.insertSubview(replicatedView ?? UIView(), aboveSubview: blurView)
+        
+        addOptionsView(for: replicatedView!, at: indexPath)
+        animator = AnimatiorFactory.grow(blurView: blurView, view: optionsView)
+    }
+    
+    func updatePreview(at progress: CGFloat) {
+        animator?.fractionComplete = max(0.01, min(progress, 0.99))
+    }
+    
+    func finishPreview() {
+        animator?.stopAnimation(false)
+        animator?.finishAnimation(at: .end)
+        animator = nil
+        AnimatiorFactory.complete(view: optionsView, frame: replicatedView?.frame ?? CGRect()).startAnimation()
+    }
+    
+    func cancelPreview() {
+        animator?.isReversed = true
+        animator?.startAnimation()
+        animator?.addCompletion({ (position) in
+            switch position {
+            case .start:
+                self.replicatedView?.removeFromSuperview()
+                self.optionsView.removeFromSuperview()
+                self.blurView.isUserInteractionEnabled = false
+            default:
+                ()
+            }
+        })
+    }
+    
+    func addOptionsView(for cellView: UIView, at indexPath: IndexPath) {
+        optionsView.removeFromSuperview()
+        optionsView.frame = cellView.frame
+        optionsView.indexPath = indexPath
+        optionsView.delegate = self
+        cellView.superview?.insertSubview(optionsView, belowSubview: cellView)
+    }
+    
 }
