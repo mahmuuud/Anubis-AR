@@ -1,0 +1,12 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "levels" : [
+    {
+      "filename" : "Bust of Queen Nefertiti_OCC.jpg",
+      "mipmap-level" : "base"
+    }
+  ]
+}

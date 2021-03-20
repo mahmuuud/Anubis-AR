@@ -51,7 +51,9 @@ extension HomeViewController: OptionsViewDelegate {
     }
     
     func didTapARButton(at indexPath: IndexPath) {
-        
+        let vc = ARViewController()
+//        navigationController?.pushViewController(vc, animated: true)
+        present(vc, animated: true, completion: nil)
     }
     
     func didTapCancelButton() {

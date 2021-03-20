@@ -8,6 +8,7 @@ target 'Anubis' do
   # Pods for Anubis
 # add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
 pod 'Firebase/Database'
 pod 'CodableFirebase'
 pod 'Kingfisher', '~> 5.0'

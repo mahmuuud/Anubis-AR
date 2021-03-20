@@ -89,6 +89,7 @@ class AnimatiorFactory {
         let safeAreaGuide = parentView.layoutMarginsGuide
         let bannerView = UIView(frame: CGRect(x: parentView.bounds.minX, y: safeAreaGuide.layoutFrame.minY, width: parentView.bounds.width, height: 40))
         bannerView.backgroundColor = .red
+        bannerView.alpha = 0.65
         bannerView.center.y -= 200
         parentView.addSubview(bannerView)
         

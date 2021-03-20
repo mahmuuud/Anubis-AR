@@ -62,5 +62,7 @@
 	<array>
 		<string>comgooglemaps</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow camera usage.</string>
 </dict>
 </plist>
