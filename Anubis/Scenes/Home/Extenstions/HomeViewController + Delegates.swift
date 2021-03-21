@@ -52,7 +52,8 @@ extension HomeViewController: OptionsViewDelegate {
     
     func didTapARButton(at indexPath: IndexPath) {
         let vc = ARViewController()
-//        navigationController?.pushViewController(vc, animated: true)
+        let modelType = ModelType.init(rawValue: monuments[indexPath.row].modelType)
+        vc.modelType = modelType
         present(vc, animated: true, completion: nil)
     }
     

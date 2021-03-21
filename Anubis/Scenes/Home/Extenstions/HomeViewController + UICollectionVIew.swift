@@ -25,10 +25,13 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)!
-        let holdErrorMessage = "Please hold the desired monument for options"
-        isAnimatingBanner = true
-        AnimatiorFactory.shake(view: cell, with: 15).startAnimation()
-        AnimatiorFactory.showErrorBanner(in: view, with: holdErrorMessage)
+//        let cell = collectionView.cellForItem(at: indexPath)!
+//        let holdErrorMessage = "Please hold the desired monument for options"
+//        isAnimatingBanner = true
+//        AnimatiorFactory.shake(view: cell, with: 15).startAnimation()
+//        AnimatiorFactory.showErrorBanner(in: view, with: holdErrorMessage)
+        let vc = ProductDetailsViewController()
+        vc.currentMonument = monuments[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

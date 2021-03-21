@@ -16,11 +16,21 @@ enum AppState: String {
     case waiting
 }
 
+enum ModelType: String {
+    case mask
+    case cat
+    case sphinx
+    case tut
+    case tut1
+    case nefer
+}
+
 class ARViewController: UIViewController {
     @IBOutlet weak var arView: ARView!
     @IBOutlet weak var overlayView: ARCoachingOverlayView!
     
     var appState: AppState = .waiting
+    var modelType: ModelType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +40,121 @@ class ARViewController: UIViewController {
         arView.session.delegate = self
         detectPlanes(.horizontal)
         
-        let vase = try! MyScene.loadTutMask()
-        
-        
-        // Place model on a horizontal plane.
-        let anchor = AnchorEntity(plane: .horizontal)
-        arView.scene.addAnchor(anchor)
-        
-        vase.scale = [1, 1, 1] * 0.00006
-        anchor.children.append(vase)
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        placeModel()
+    }
+    
+    func placeModel() {
+        guard let modelType = self.modelType else {
+            return
+        }
+        switch modelType {
+        case .mask:
+            MyScene.loadTutMaskAsync { (result) in
+                switch result {
+                case .success(let model):
+                    DispatchQueue.main.async {
+                        let anchor = AnchorEntity(plane: .horizontal)
+                        self.arView.scene.addAnchor(anchor)
+                        model.scale = [1, 1, 1] * 0.00006
+                        anchor.children.append(model)
+                    }
+                    
+                case .failure(let error):
+                    self.showAlert(planeType: error.localizedDescription)
+                    
+                }
+            }
+        case .cat:
+            MyScene.loadCatAsync { (result) in
+                switch result {
+                case .success(let model):
+                    DispatchQueue.main.async {
+                        let anchor = AnchorEntity(plane: .horizontal)
+                        self.arView.scene.addAnchor(anchor)
+                        model.scale = [1, 1, 1] * 0.00006
+                        anchor.children.append(model)
+                    }
+                    
+                case .failure(let error):
+                    self.showAlert(planeType: error.localizedDescription)
+                    
+                }
+            }
+            
+        case .sphinx:
+            MyScene.loadSphinxAsync { (result) in
+                switch result {
+                case .success(let model):
+                    DispatchQueue.main.async {
+                        let anchor = AnchorEntity(plane: .horizontal)
+                        self.arView.scene.addAnchor(anchor)
+                        model.scale = [1, 1, 1] * 0.00006
+                        anchor.children.append(model)
+                    }
+                    
+                case .failure(let error):
+                    self.showAlert(planeType: error.localizedDescription)
+                    
+                }
+            }
+            
+        case .tut:
+            MyScene.loadTutAsync { (result) in
+                switch result {
+                case .success(let model):
+                    DispatchQueue.main.async {
+                        let anchor = AnchorEntity(plane: .horizontal)
+                        self.arView.scene.addAnchor(anchor)
+                        model.scale = [1, 1, 1] * 0.00006
+                        anchor.children.append(model)
+                    }
+                    
+                case .failure(let error):
+                    self.showAlert(planeType: error.localizedDescription)
+                    
+                }
+            }
+            
+        case .tut1:
+            MyScene.loadTutOneAsync { (result) in
+                switch result {
+                case .success(let model):
+                    DispatchQueue.main.async {
+                        let anchor = AnchorEntity(plane: .horizontal)
+                        self.arView.scene.addAnchor(anchor)
+                        model.scale = [1, 1, 1] * 0.00006
+                        anchor.children.append(model)
+                    }
+                    
+                case .failure(let error):
+                    self.showAlert(planeType: error.localizedDescription)
+                    
+                }
+            }
+            
+        case .nefer:
+            MyScene.loadNefertAsync { (result) in
+                switch result {
+                case .success(let model):
+                    DispatchQueue.main.async {
+                        let anchor = AnchorEntity(plane: .horizontal)
+                        self.arView.scene.addAnchor(anchor)
+                        model.scale = [1, 1, 1] * 0.00006
+                        anchor.children.append(model)
+                    }
+                    
+                case .failure(let error):
+                    self.showAlert(planeType: error.localizedDescription)
+                    
+                }
+            }
+            
+            
+        }
     }
     
     func detectPlanes(_ plane: ARWorldTrackingConfiguration.PlaneDetection) {
@@ -62,55 +177,32 @@ class ARViewController: UIViewController {
 extension ARViewController: ARSessionDelegate {
     
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-//        guard let anchors = anchors as? [ARPlaneAnchor] else {
-//            return
-//        }
-//        // Unefficient iterations just for explanation
-//        if anchors.contains(where: {$0.alignment == .horizontal}) {
-//            print("Detected horizontal plane")
-//            showAlert(planeType: "Horizontal")
-//            do {
-//                let vase = try! Entity.load(named: "Tut")
-//
-//                // Place model on a horizontal plane.
-//                let anchor = AnchorEntity(plane: .horizontal)
-//                arView.scene.addAnchor(anchor)
-//
-//                vase.scale = [1, 1, 1] * 0.006
-//                anchor.children.append(vase)
-//
-//            } catch {
-//                fatalError("Failed to load asset.")
-//            }
-//
-//        } else if anchors.contains(where: {$0.alignment == .vertical}) {
-//            print("Detected vertical plane")
-//            showAlert(planeType: "Vertical")
-//        }
+        //        guard let anchors = anchors as? [ARPlaneAnchor] else {
+        //            return
+        //        }
+        //        // Unefficient iterations just for explanation
+        //        if anchors.contains(where: {$0.alignment == .horizontal}) {
+        //            print("Detected horizontal plane")
+        //            showAlert(planeType: "Horizontal")
+        //            do {
+        //                let vase = try! Entity.load(named: "Tut")
+        //
+        //                // Place model on a horizontal plane.
+        //                let anchor = AnchorEntity(plane: .horizontal)
+        //                arView.scene.addAnchor(anchor)
+        //
+        //                vase.scale = [1, 1, 1] * 0.006
+        //                anchor.children.append(vase)
+        //
+        //            } catch {
+        //                fatalError("Failed to load asset.")
+        //            }
+        //
+        //        } else if anchors.contains(where: {$0.alignment == .vertical}) {
+        //            print("Detected vertical plane")
+        //            showAlert(planeType: "Vertical")
+        //        }
     }
     
 }
 
-extension ARSCNView {
-    /**
-     Type conversion wrapper for original `unprojectPoint(_:)` method.
-     Used in contexts where sticking to SIMD3<Float> type is helpful.
-     */
-    func unprojectPoint(_ point: SIMD3<Float>) -> SIMD3<Float> {
-        return SIMD3<Float>(unprojectPoint(SCNVector3(point)))
-    }
-    
-    // - Tag: CastRayForFocusSquarePosition
-    func castRay(for query: ARRaycastQuery) -> [ARRaycastResult] {
-        return session.raycast(query)
-    }
-
-    // - Tag: GetRaycastQuery
-    func getRaycastQuery(for alignment: ARRaycastQuery.TargetAlignment = .any) -> ARRaycastQuery? {
-        return raycastQuery(from: screenCenter, allowing: .estimatedPlane, alignment: alignment)
-    }
-    
-    var screenCenter: CGPoint {
-        return CGPoint(x: bounds.midX, y: bounds.midY)
-    }
-}

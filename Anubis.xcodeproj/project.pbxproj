@@ -32,6 +32,8 @@
 		0CAAC540244E41B80070A49F /* OptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC53F244E41B80070A49F /* OptionsView.xib */; };
 		0CAAC542244E4AC40070A49F /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC541244E4AC40070A49F /* OptionsView.swift */; };
 		0CB3445C260557B800262989 /* Nefer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CB3445B260557B800262989 /* Nefer.usdz */; };
+		0CC440B82607E7E7000E82B3 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */; };
+		0CC440B92607E7E7000E82B3 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */; };
 		0CD6BED52606520D001F6AE9 /* MyScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3445E260649E400262989 /* MyScene.rcproject */; };
 		0CD6BEF226067EA2001F6AE9 /* tut1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */; };
 		0CD6BEF326067EA2001F6AE9 /* sphinx.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */; };
@@ -70,6 +72,8 @@
 		0CAAC541244E4AC40070A49F /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		0CB3445B260557B800262989 /* Nefer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Nefer.usdz; sourceTree = "<group>"; };
 		0CB3445E260649E400262989 /* MyScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MyScene.rcproject; sourceTree = "<group>"; };
+		0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
 		0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tut1.usdz; sourceTree = "<group>"; };
 		0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sphinx.usdz; sourceTree = "<group>"; };
 		0CD6BEF026067EA2001F6AE9 /* Tut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tut.usdz; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 		0C4347972422E26C00507FC4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0CC440B52607E7B7000E82B3 /* Monument Details */,
 				0C503D49260535D400A09F8B /* AR View */,
 				0C4347A424242D8C00507FC4 /* Splash Screen */,
 				0C4347982422E28400507FC4 /* Home */,
@@ -221,6 +226,15 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		0CC440B52607E7B7000E82B3 /* Monument Details */ = {
+			isa = PBXGroup;
+			children = (
+				0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */,
+				0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */,
+			);
+			path = "Monument Details";
+			sourceTree = "<group>";
+		};
 		2F26530F852041C153BA6EFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +327,7 @@
 				0CD6BF0826068256001F6AE9 /* cat.usdz in Resources */,
 				0C503D4D2605369D00A09F8B /* ARViewController.xib in Resources */,
 				0CAAC540244E41B80070A49F /* OptionsView.xib in Resources */,
+				0CC440B92607E7E7000E82B3 /* ProductDetailsViewController.xib in Resources */,
 				0CD6BEF226067EA2001F6AE9 /* tut1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +409,7 @@
 				0C4347A724242DAA00507FC4 /* SplashScreenViewController.swift in Sources */,
 				0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */,
 				0CAAC538244D1C170070A49F /* AnimatiorFactory.swift in Sources */,
+				0CC440B82607E7E7000E82B3 /* ProductDetailsViewController.swift in Sources */,
 				0C503D4C2605369D00A09F8B /* ARViewController.swift in Sources */,
 				0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */,
 				0CAAC536244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift in Sources */,

@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9121143818, green: 0.7458944917, blue: 0.5656014681, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9137254902, green: 0.7450980392, blue: 0.5647058824, alpha: 1)
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.title = "Anubis"
         if let layout = homeCollectionView?.collectionViewLayout as? PinterestLayout {
