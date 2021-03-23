@@ -10,6 +10,7 @@ target 'Anubis' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Database'
+pod 'Firebase/MLVision', '6.25.0'
 pod 'CodableFirebase'
 pod 'Kingfisher', '~> 5.0'
 # add pods for any other desired Firebase products

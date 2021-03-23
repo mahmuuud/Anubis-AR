@@ -18,7 +18,7 @@
         <!--Search-->
         <scene sceneID="fnF-eH-zpU">
             <objects>
-                <viewController id="1gI-O4-puH" sceneMemberID="viewController">
+                <viewController id="1gI-O4-puH" customClass="SearchDestinationViewController" customModule="Anubis" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Lq7-AG-LMZ"/>
                     <navigationItem key="navigationItem" id="Pq0-Ky-nBl"/>
                 </viewController>

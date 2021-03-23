@@ -34,6 +34,8 @@
 		0CB3445C260557B800262989 /* Nefer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CB3445B260557B800262989 /* Nefer.usdz */; };
 		0CC440B82607E7E7000E82B3 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */; };
 		0CC440B92607E7E7000E82B3 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */; };
+		0CC440CC2607F696000E82B3 /* SearchDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC440CA2607F696000E82B3 /* SearchDestinationViewController.swift */; };
+		0CC440CD2607F696000E82B3 /* SearchDestinationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC440CB2607F696000E82B3 /* SearchDestinationViewController.xib */; };
 		0CD6BED52606520D001F6AE9 /* MyScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3445E260649E400262989 /* MyScene.rcproject */; };
 		0CD6BEF226067EA2001F6AE9 /* tut1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */; };
 		0CD6BEF326067EA2001F6AE9 /* sphinx.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */; };
@@ -74,6 +76,8 @@
 		0CB3445E260649E400262989 /* MyScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MyScene.rcproject; sourceTree = "<group>"; };
 		0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
+		0CC440CA2607F696000E82B3 /* SearchDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewController.swift; sourceTree = "<group>"; };
+		0CC440CB2607F696000E82B3 /* SearchDestinationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDestinationViewController.xib; sourceTree = "<group>"; };
 		0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tut1.usdz; sourceTree = "<group>"; };
 		0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sphinx.usdz; sourceTree = "<group>"; };
 		0CD6BEF026067EA2001F6AE9 /* Tut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tut.usdz; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		0C4347972422E26C00507FC4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0CC440C92607F673000E82B3 /* Search Destination */,
 				0CC440B52607E7B7000E82B3 /* Monument Details */,
 				0C503D49260535D400A09F8B /* AR View */,
 				0C4347A424242D8C00507FC4 /* Splash Screen */,
@@ -235,6 +240,15 @@
 			path = "Monument Details";
 			sourceTree = "<group>";
 		};
+		0CC440C92607F673000E82B3 /* Search Destination */ = {
+			isa = PBXGroup;
+			children = (
+				0CC440CA2607F696000E82B3 /* SearchDestinationViewController.swift */,
+				0CC440CB2607F696000E82B3 /* SearchDestinationViewController.xib */,
+			);
+			path = "Search Destination";
+			sourceTree = "<group>";
+		};
 		2F26530F852041C153BA6EFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +337,7 @@
 				0C6467C52422802400DD412D /* Main.storyboard in Resources */,
 				0CD6BEF426067EA2001F6AE9 /* Tut.usdz in Resources */,
 				0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */,
+				0CC440CD2607F696000E82B3 /* SearchDestinationViewController.xib in Resources */,
 				0CB3445C260557B800262989 /* Nefer.usdz in Resources */,
 				0CD6BF0826068256001F6AE9 /* cat.usdz in Resources */,
 				0C503D4D2605369D00A09F8B /* ARViewController.xib in Resources */,
@@ -407,6 +422,7 @@
 				0C4347D224243C1500507FC4 /* MonumentModel.swift in Sources */,
 				0CAAC4DF244684AF0070A49F /* HomeViewController.swift in Sources */,
 				0C4347A724242DAA00507FC4 /* SplashScreenViewController.swift in Sources */,
+				0CC440CC2607F696000E82B3 /* SearchDestinationViewController.swift in Sources */,
 				0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */,
 				0CAAC538244D1C170070A49F /* AnimatiorFactory.swift in Sources */,
 				0CC440B82607E7E7000E82B3 /* ProductDetailsViewController.swift in Sources */,
