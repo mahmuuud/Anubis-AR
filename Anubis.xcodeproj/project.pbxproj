@@ -13,6 +13,8 @@
 		0C4347CD2424316000507FC4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347CC2424316000507FC4 /* DataSource.swift */; };
 		0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347CF2424330500507FC4 /* PinterestLayout.swift */; };
 		0C4347D224243C1500507FC4 /* MonumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4347D124243C1500507FC4 /* MonumentModel.swift */; };
+		0C503D4C2605369D00A09F8B /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C503D4A2605369D00A09F8B /* ARViewController.swift */; };
+		0C503D4D2605369D00A09F8B /* ARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C503D4B2605369D00A09F8B /* ARViewController.xib */; };
 		0C6467BE2422802400DD412D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6467BD2422802400DD412D /* AppDelegate.swift */; };
 		0C6467C02422802400DD412D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6467BF2422802400DD412D /* SceneDelegate.swift */; };
 		0C6467C52422802400DD412D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6467C32422802400DD412D /* Main.storyboard */; };
@@ -23,6 +25,23 @@
 		0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC4DE244684AF0070A49F /* HomeViewController.xib */; };
 		0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */; };
 		0CAAC4E4244685A10070A49F /* MonumentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */; };
+		0CAAC536244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC535244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift */; };
+		0CAAC538244D1C170070A49F /* AnimatiorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC537244D1C170070A49F /* AnimatiorFactory.swift */; };
+		0CAAC53A244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC539244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift */; };
+		0CAAC53C244E3C160070A49F /* HomeViewController + Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC53B244E3C160070A49F /* HomeViewController + Delegates.swift */; };
+		0CAAC540244E41B80070A49F /* OptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAAC53F244E41B80070A49F /* OptionsView.xib */; };
+		0CAAC542244E4AC40070A49F /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAC541244E4AC40070A49F /* OptionsView.swift */; };
+		0CB3445C260557B800262989 /* Nefer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CB3445B260557B800262989 /* Nefer.usdz */; };
+		0CC440B82607E7E7000E82B3 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */; };
+		0CC440B92607E7E7000E82B3 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */; };
+		0CC440CC2607F696000E82B3 /* SearchDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC440CA2607F696000E82B3 /* SearchDestinationViewController.swift */; };
+		0CC440CD2607F696000E82B3 /* SearchDestinationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC440CB2607F696000E82B3 /* SearchDestinationViewController.xib */; };
+		0CD6BED52606520D001F6AE9 /* MyScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3445E260649E400262989 /* MyScene.rcproject */; };
+		0CD6BEF226067EA2001F6AE9 /* tut1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */; };
+		0CD6BEF326067EA2001F6AE9 /* sphinx.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */; };
+		0CD6BEF426067EA2001F6AE9 /* Tut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BEF026067EA2001F6AE9 /* Tut.usdz */; };
+		0CD6BF0826068256001F6AE9 /* cat.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6BF0726068256001F6AE9 /* cat.usdz */; };
+		0CDCACE7260684EB00917506 /* tutMask.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCACE6260684EB00917506 /* tutMask.usdz */; };
 		3EA40F68DD5147B9710D36A0 /* Pods_Anubis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4511CCF600DF8772D608B458 /* Pods_Anubis.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +52,8 @@
 		0C4347CC2424316000507FC4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		0C4347CF2424330500507FC4 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		0C4347D124243C1500507FC4 /* MonumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentModel.swift; sourceTree = "<group>"; };
+		0C503D4A2605369D00A09F8B /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		0C503D4B2605369D00A09F8B /* ARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARViewController.xib; sourceTree = "<group>"; };
 		0C6467BA2422802400DD412D /* Anubis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anubis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6467BD2422802400DD412D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C6467BF2422802400DD412D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +66,23 @@
 		0CAAC4DE244684AF0070A49F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		0CAAC4E1244685A10070A49F /* MonumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentCollectionViewCell.xib; sourceTree = "<group>"; };
+		0CAAC535244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + UIPreviewInteraction.swift"; sourceTree = "<group>"; };
+		0CAAC537244D1C170070A49F /* AnimatiorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatiorFactory.swift; sourceTree = "<group>"; };
+		0CAAC539244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + UICollectionVIew.swift"; sourceTree = "<group>"; };
+		0CAAC53B244E3C160070A49F /* HomeViewController + Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + Delegates.swift"; sourceTree = "<group>"; };
+		0CAAC53F244E41B80070A49F /* OptionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsView.xib; sourceTree = "<group>"; };
+		0CAAC541244E4AC40070A49F /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		0CB3445B260557B800262989 /* Nefer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Nefer.usdz; sourceTree = "<group>"; };
+		0CB3445E260649E400262989 /* MyScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MyScene.rcproject; sourceTree = "<group>"; };
+		0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
+		0CC440CA2607F696000E82B3 /* SearchDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewController.swift; sourceTree = "<group>"; };
+		0CC440CB2607F696000E82B3 /* SearchDestinationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDestinationViewController.xib; sourceTree = "<group>"; };
+		0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tut1.usdz; sourceTree = "<group>"; };
+		0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sphinx.usdz; sourceTree = "<group>"; };
+		0CD6BEF026067EA2001F6AE9 /* Tut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tut.usdz; sourceTree = "<group>"; };
+		0CD6BF0726068256001F6AE9 /* cat.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cat.usdz; sourceTree = "<group>"; };
+		0CDCACE6260684EB00917506 /* tutMask.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tutMask.usdz; sourceTree = "<group>"; };
 		3E5AD4C15190E2CCE3BB9F7B /* Pods-Anubis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis.release.xcconfig"; path = "Target Support Files/Pods-Anubis/Pods-Anubis.release.xcconfig"; sourceTree = "<group>"; };
 		4511CCF600DF8772D608B458 /* Pods_Anubis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anubis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8231917C9E725E77EC339E /* Pods-Anubis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anubis.debug.xcconfig"; path = "Target Support Files/Pods-Anubis/Pods-Anubis.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +103,9 @@
 		0C4347972422E26C00507FC4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0CC440C92607F673000E82B3 /* Search Destination */,
+				0CC440B52607E7B7000E82B3 /* Monument Details */,
+				0C503D49260535D400A09F8B /* AR View */,
 				0C4347A424242D8C00507FC4 /* Splash Screen */,
 				0C4347982422E28400507FC4 /* Home */,
 			);
@@ -74,9 +115,12 @@
 		0C4347982422E28400507FC4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0CAAC534244D1A810070A49F /* Extenstions */,
 				0CAAC4DC244680210070A49F /* Cell */,
 				0CAAC4DD244684AF0070A49F /* HomeViewController.swift */,
 				0CAAC4DE244684AF0070A49F /* HomeViewController.xib */,
+				0CAAC53F244E41B80070A49F /* OptionsView.xib */,
+				0CAAC541244E4AC40070A49F /* OptionsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -104,8 +148,18 @@
 			isa = PBXGroup;
 			children = (
 				0C4347CF2424330500507FC4 /* PinterestLayout.swift */,
+				0CAAC537244D1C170070A49F /* AnimatiorFactory.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0C503D49260535D400A09F8B /* AR View */ = {
+			isa = PBXGroup;
+			children = (
+				0C503D4A2605369D00A09F8B /* ARViewController.swift */,
+				0C503D4B2605369D00A09F8B /* ARViewController.xib */,
+			);
+			path = "AR View";
 			sourceTree = "<group>";
 		};
 		0C6467B12422802400DD412D = {
@@ -129,6 +183,8 @@
 		0C6467BC2422802400DD412D /* Anubis */ = {
 			isa = PBXGroup;
 			children = (
+				0CB3445E260649E400262989 /* MyScene.rcproject */,
+				0CB344572605553F00262989 /* Assets */,
 				0C4347CE242432F400507FC4 /* Utilities */,
 				0C4347A02424277700507FC4 /* Model */,
 				0C4347972422E26C00507FC4 /* Scenes */,
@@ -150,6 +206,47 @@
 				0CAAC4E2244685A10070A49F /* MonumentCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CAAC534244D1A810070A49F /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				0CAAC535244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift */,
+				0CAAC539244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift */,
+				0CAAC53B244E3C160070A49F /* HomeViewController + Delegates.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		0CB344572605553F00262989 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCACE6260684EB00917506 /* tutMask.usdz */,
+				0CD6BF0726068256001F6AE9 /* cat.usdz */,
+				0CD6BEEF26067EA2001F6AE9 /* sphinx.usdz */,
+				0CD6BEF026067EA2001F6AE9 /* Tut.usdz */,
+				0CD6BEEE26067EA1001F6AE9 /* tut1.usdz */,
+				0CB3445B260557B800262989 /* Nefer.usdz */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0CC440B52607E7B7000E82B3 /* Monument Details */ = {
+			isa = PBXGroup;
+			children = (
+				0CC440B62607E7E6000E82B3 /* ProductDetailsViewController.swift */,
+				0CC440B72607E7E7000E82B3 /* ProductDetailsViewController.xib */,
+			);
+			path = "Monument Details";
+			sourceTree = "<group>";
+		};
+		0CC440C92607F673000E82B3 /* Search Destination */ = {
+			isa = PBXGroup;
+			children = (
+				0CC440CA2607F696000E82B3 /* SearchDestinationViewController.swift */,
+				0CC440CB2607F696000E82B3 /* SearchDestinationViewController.xib */,
+			);
+			path = "Search Destination";
 			sourceTree = "<group>";
 		};
 		2F26530F852041C153BA6EFA /* Frameworks */ = {
@@ -181,6 +278,7 @@
 				0C6467B72422802400DD412D /* Frameworks */,
 				0C6467B82422802400DD412D /* Resources */,
 				E4B66F8635F7BC95E6FA3E12 /* [CP] Embed Pods Frameworks */,
+				0CFFBFD524F72E86007B6384 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -229,13 +327,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD6BEF326067EA2001F6AE9 /* sphinx.usdz in Resources */,
 				0C6467CA2422802600DD412D /* LaunchScreen.storyboard in Resources */,
 				0C6467D22422806D00DD412D /* GoogleService-Info.plist in Resources */,
 				0C4347A824242DAA00507FC4 /* SplashScreenViewController.xib in Resources */,
 				0CAAC4E4244685A10070A49F /* MonumentCollectionViewCell.xib in Resources */,
 				0C6467C72422802600DD412D /* Assets.xcassets in Resources */,
+				0CDCACE7260684EB00917506 /* tutMask.usdz in Resources */,
 				0C6467C52422802400DD412D /* Main.storyboard in Resources */,
+				0CD6BEF426067EA2001F6AE9 /* Tut.usdz in Resources */,
 				0CAAC4E0244684AF0070A49F /* HomeViewController.xib in Resources */,
+				0CC440CD2607F696000E82B3 /* SearchDestinationViewController.xib in Resources */,
+				0CB3445C260557B800262989 /* Nefer.usdz in Resources */,
+				0CD6BF0826068256001F6AE9 /* cat.usdz in Resources */,
+				0C503D4D2605369D00A09F8B /* ARViewController.xib in Resources */,
+				0CAAC540244E41B80070A49F /* OptionsView.xib in Resources */,
+				0CC440B92607E7E7000E82B3 /* ProductDetailsViewController.xib in Resources */,
+				0CD6BEF226067EA2001F6AE9 /* tut1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +372,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0CFFBFD524F72E86007B6384 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		E4B66F8635F7BC95E6FA3E12 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,13 +417,22 @@
 			files = (
 				0C4347CD2424316000507FC4 /* DataSource.swift in Sources */,
 				0C4347A32424279300507FC4 /* MonumentsDataModel.xcdatamodeld in Sources */,
+				0CAAC53A244E3BF00070A49F /* HomeViewController + UICollectionVIew.swift in Sources */,
+				0CAAC542244E4AC40070A49F /* OptionsView.swift in Sources */,
 				0C4347D224243C1500507FC4 /* MonumentModel.swift in Sources */,
 				0CAAC4DF244684AF0070A49F /* HomeViewController.swift in Sources */,
 				0C4347A724242DAA00507FC4 /* SplashScreenViewController.swift in Sources */,
+				0CC440CC2607F696000E82B3 /* SearchDestinationViewController.swift in Sources */,
 				0C4347D02424330500507FC4 /* PinterestLayout.swift in Sources */,
+				0CAAC538244D1C170070A49F /* AnimatiorFactory.swift in Sources */,
+				0CC440B82607E7E7000E82B3 /* ProductDetailsViewController.swift in Sources */,
+				0C503D4C2605369D00A09F8B /* ARViewController.swift in Sources */,
 				0CAAC4E3244685A10070A49F /* MonumentCollectionViewCell.swift in Sources */,
+				0CAAC536244D1AAC0070A49F /* HomeViewController + UIPreviewInteraction.swift in Sources */,
 				0C6467BE2422802400DD412D /* AppDelegate.swift in Sources */,
+				0CAAC53C244E3C160070A49F /* HomeViewController + Delegates.swift in Sources */,
 				0C6467C02422802400DD412D /* SceneDelegate.swift in Sources */,
+				0CD6BED52606520D001F6AE9 /* MyScene.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = AXBRK75K78;
 				INFOPLIST_FILE = Anubis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

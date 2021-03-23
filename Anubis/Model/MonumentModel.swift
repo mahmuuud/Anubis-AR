@@ -15,4 +15,5 @@ struct MonumentModel: Codable {
     var lon: Double!
     var imagesPaths: [String]!
     var tale: String!
+    var modelType: String!
 }
