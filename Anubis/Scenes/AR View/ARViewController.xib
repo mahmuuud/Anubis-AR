@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARViewController" customModule="Anubis" customModuleProvider="target">
+            <connections>
+                <outlet property="arView" destination="g3H-M3-14q" id="buN-Ua-6PB"/>
+                <outlet property="overlayView" destination="Nq5-C1-ynJ" id="lUw-O9-G0B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arView multipleTouchEnabled="YES" contentMode="scaleToFill" id="g3H-M3-14q">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </arView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nq5-C1-ynJ" customClass="ARCoachingOverlayView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="d2K-ND-MdV"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Nq5-C1-ynJ" firstAttribute="top" secondItem="g3H-M3-14q" secondAttribute="top" id="9SI-GV-KK6"/>
+                <constraint firstItem="Nq5-C1-ynJ" firstAttribute="bottom" secondItem="g3H-M3-14q" secondAttribute="bottom" id="Ey5-1O-H4J"/>
+                <constraint firstItem="Nq5-C1-ynJ" firstAttribute="width" secondItem="g3H-M3-14q" secondAttribute="width" id="Gu3-5y-Dnp"/>
+                <constraint firstItem="Nq5-C1-ynJ" firstAttribute="leading" secondItem="g3H-M3-14q" secondAttribute="leading" id="tSF-7G-qnW"/>
+                <constraint firstItem="Nq5-C1-ynJ" firstAttribute="height" secondItem="g3H-M3-14q" secondAttribute="height" id="zzL-FU-PUv"/>
+            </constraints>
+            <point key="canvasLocation" x="38" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

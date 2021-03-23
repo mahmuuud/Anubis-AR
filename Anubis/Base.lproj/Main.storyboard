@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Splash Screen View Controller-->
@@ -13,5 +15,84 @@
             </objects>
             <point key="canvasLocation" x="132" y="117"/>
         </scene>
+        <!--Search-->
+        <scene sceneID="fnF-eH-zpU">
+            <objects>
+                <viewController id="1gI-O4-puH" customClass="SearchDestinationViewController" customModule="Anubis" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Lq7-AG-LMZ"/>
+                    <navigationItem key="navigationItem" id="Pq0-Ky-nBl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8GE-yG-OXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3751" y="707"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="vjC-Tk-gTZ">
+            <objects>
+                <navigationController id="CXn-wL-eKW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="1qs-C3-whu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4SO-gk-Nvs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="A8O-w1-XeE" kind="relationship" relationship="rootViewController" id="g0a-gJ-xms"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlV-9I-4Je" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="-87"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="mxI-I3-Nu4">
+            <objects>
+                <viewController id="A8O-w1-XeE" customClass="HomeViewController" customModule="Anubis" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="CVM-v4-D22"/>
+                    <navigationItem key="navigationItem" id="pyn-Wr-L1p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ru7-zP-xcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3751" y="21"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DRc-YG-K2z">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" id="LbS-di-iih" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VZG-ac-zUy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.91372549020000005" green="0.74509803919999995" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CXn-wL-eKW" kind="relationship" relationship="viewControllers" id="K3e-cv-Lu4"/>
+                        <segue destination="60h-Bz-XgP" kind="relationship" relationship="viewControllers" id="IQr-6c-1un"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joM-5i-nCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="346"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="w5I-nM-aAl">
+            <objects>
+                <navigationController id="60h-Bz-XgP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Q8p-JD-JSo"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wPN-ri-xCx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1gI-O4-puH" kind="relationship" relationship="rootViewController" id="bwI-db-Snp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c03-Fv-XgX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="706"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
 </document>
